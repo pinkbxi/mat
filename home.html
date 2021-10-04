@@ -2,16 +2,25 @@
 <html>
     <head>
         <tittle>
-            Welcome to mathematic kingdom
+            EMA walmart edition
         </tittle>
     </head>
     <body>
         <h1>
             Welcome whats 1+1
         </h1>
-        <input>
-        <p>
-            Ye eyeyeyey
-        </p>
+        <input type="text" id="userInput" />
+        <input type="submit" onclick="othername();" />
+        <p id="arteisingai"></p>
     </body>
+    <script>
+        function othername() {
+            var input = document.getElementById("userInput").value;
+            if(input == "2"){
+                //var output = document.getElementById("arteisingai").value;
+                //output = "Teisingai";
+                alert(input);
+            }
+        }
+    </script>
 </html>
