@@ -19,8 +19,7 @@
             var name = document.getElementById("name");
             var pass = document.getElementById("pass");
 
-            var fso = new ActiveXObject("Scripting.FileSystemObject");
-            var s = fso.CreateTextFile("C:\\temp\\userpass.txt",true);
+            var s = document.CreateTextFile("C:\\temp\\userpass.txt",true);
             s.WriteLine("test");
             alert(name.value + pass.value);
         }
