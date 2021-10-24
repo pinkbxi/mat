@@ -8,9 +8,7 @@
     <body background="background.png">
         <h1></h1>
         <input type="text" value="Vardas" id="name">
-        <title>
-            
-        </title>
+        <h1></h1>
         <input type="text" value="Slaptažodis" id="pass">
         <input type="button" value="Prisijunkti" onclick="act()">
     </body>
@@ -20,7 +18,7 @@
             var name = document.getElementById("name");
             var pass = document.getElementById("pass");
 
-            alert(name + pass);
+            alert(name.title + pass.title);
         }
     </script>
 </html>
