@@ -16,12 +16,16 @@
     <script>
         function act()
         {
-            var name = document.getElementById("name");
-            var pass = document.getElementById("pass");
+            const Http = new XMLHttpRequest();
+            const url='https://jsonplaceholder.typicode.com/posts';
+            Http.open("GET", url);
+            Http.send();
 
-            var s = document.CreateTextFile("C:\\temp\\userpass.txt",true);
-            s.WriteLine("test");
-            alert(name.value + pass.value);
+            Http.onreadystatechange = (e) => {
+                var output = Http.responseText;
+            }
+            //if(output.contains)
+            alert(name.value + pass.value + output);
         }
     </script>
 </html>
