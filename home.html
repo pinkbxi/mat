@@ -15,6 +15,10 @@
     </body>
     <script>
         require('dotenv').config();
-        alert(process.env.NAME)
+        const db = require('database');
+        db.connect({
+        name: process.env.NAME
+        })
+        alert(name);
     </script>
 </html>
