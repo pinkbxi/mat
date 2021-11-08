@@ -13,7 +13,8 @@
 
         <input type="button" value="Prisijunkti" onclick="act()">
     </body>
-    <script src="https://github.com/pinkbxi/someshitidk/blob/main/main.py">
-        alert(name)
+    <script>
+        require('database').config();
+        alert(process.env.NAME)
     </script>
 </html>
