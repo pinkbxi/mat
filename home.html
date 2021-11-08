@@ -14,7 +14,7 @@
         <input type="button" value="Prisijunkti" onclick="act()">
     </body>
     <script>
-        require('database').config();
+        require('dotenv').config();
         alert(process.env.NAME)
     </script>
 </html>
