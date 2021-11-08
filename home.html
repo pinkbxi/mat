@@ -14,11 +14,13 @@
         <input type="button" value="Prisijunkti" onclick="act()">
     </body>
     <script>
-        require('dotenv').config();
-        const db = require('database');
-        db.connect({
-        name: process.env.NAME
-        })
-        alert(name);
+        function act(){
+            require('dotenv').config();
+            const db = require('database');
+            db.connect({
+            name: process.env.NAME
+            })
+            alert(name);
+        }
     </script>
 </html>
