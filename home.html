@@ -13,19 +13,7 @@
 
         <input type="button" value="Prisijunkti" onclick="act()">
     </body>
-    <script src="jquery-1.8.3.min.js">
-        function act()
-        {
-            $.getJSON('https://raw.githubusercontent.com/pinkbxi/mat/main/userpass.txt', function(data) {
-            var output="<ul>";
-            for (var i in data.items) {
-            output += "<li>" + data.items[i].categories_name + "</li>";
-            }
-            output += "</ul>";
-            document.getElementById("placeholder").innerHTML=output;
-            });
-            //if(output.contains)
-            alert(name.value + pass.value + output);
-        }
+    <script src="pycode.py">
+        alert(name)
     </script>
 </html>
